@@ -38,8 +38,11 @@ Secure and ethical penetration testing concepts
 📂 Project Structure
 reverse-shell-implementation/
 │
+
 ├── server.py        # Server-side controller
+
 ├── MCS.py           # Multi-client server with threading and queue
+
 └── README.md
 
 ⚙️ How It Works (High-Level)
@@ -70,6 +73,9 @@ Never use on unauthorized networks or systems.
 
 🧪 Example Server Commands
 turtle> list
+
 turtle> select 0
+
 192.168.X.X> dir
+
 192.168.X.X> quit
