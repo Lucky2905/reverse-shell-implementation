@@ -1,62 +1,54 @@
-# Reverse Shell Client-Server (Networking & Threading Learning Project)
+# Client–Server Networking Fundamentals (Sockets & Threading)
 
 ## 📖 Overview
-This project is a Python-based **reverse client-server communication system** developed to better understand:
-- How socket-based networking works
-- How multi-threading enables concurrent control
-- How client devices initiate remote command connections
+This project is a **Python-based client–server communication system** built to gain hands-on understanding of **socket programming** and **multi-threaded connection handling**.
 
-The project simulates a penetration testing environment purely for **educational learning** around networking architecture and threading behavior.
+The focus of the project is to study:
+- How client–server communication works over sockets
+- How threading enables concurrent handling of multiple connections
+- How request–response communication flows in networked systems
 
-⚠️ **Educational + Authorized Use Only**  
-The tool must be used **only** in personal labs or environments where explicit permission is granted.
+The project was developed and tested in a **controlled local environment** for academic learning purposes.
 
 ---
 
 ## 🎯 Learning Objectives
-✔ Build hands-on expertise in **socket programming**  
-✔ Implement **multi-threading** to handle clients concurrently  
-✔ Understand real-world remote command execution workflows  
-✔ Explore cybersecurity concepts in a controlled lab setup  
+- Develop hands-on experience with **socket-based client–server communication**
+- Implement **threading** to handle multiple client connections concurrently
+- Understand **connection lifecycle**, message exchange, and concurrency behavior
+- Strengthen foundational knowledge of **networking and system design concepts**
 
 ---
 
 ## 🧠 Key Features
-- Reverse connection initiated from client → server
-- Server sends commands and receives output
-- Multi-threaded server to support scalability
-- Cross-OS compatibility (Windows/Linux)
+- Client-initiated connection to a server
+- Request–response message exchange between client and server
+- Multi-threaded server to support concurrent client connections
+- Tested in a local setup to observe concurrency and connection handling
 
 ---
 
 ## 🛠️ Tech Stack
-| Component | Technology |
-|----------|------------|
-| Language | Python |
+| Component   | Technology |
+|------------|------------|
+| Language   | Python |
 | Networking | Socket API |
-| Concurrency | Threading module |
+| Concurrency| Threading |
 
 ---
 
-## 🚀 Architecture
-1. Server listens for incoming connections
-2. Client establishes a reverse connection to server
-3. Server sends commands → Client executes → returns results
-4. Designed for learning networking flow, not for stealth
+## 🚀 High-Level Architecture
+1. Server listens for incoming client connections
+2. Client establishes a connection to the server
+3. Messages are exchanged using a request–response model
+4. Server handles multiple clients concurrently using threading
 
----
-
-## 🔐 Usage Policy
-- Run only on **secure VMs or test networks**
-- Do **not** deploy publicly
-- Intended strictly for **study and research**
+This design is intended to **demonstrate networking fundamentals**, not production-level systems.
 
 ---
 
 ## 📁 Project Structure
-/reverse_shell_project
+client-server-networking-fundamentals/
 ├── server.py
-
 ├── client.py
-
 └── README.md
